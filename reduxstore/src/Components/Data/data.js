@@ -285,4 +285,68 @@ export const data = {
       ],
     },
   ],
+  washingMachines: [
+    {
+      id: 21,
+      name: 'LG TW4',
+      price: 1000,
+      description:
+        'отдельностоящая, стирально-сушильная машина, с паром, загрузка до 12 кг, отжим 1400 об/мин, глубина 56.5 см (с люком 62 см), энергопотребление A, прямой привод, 14 программ, AI DD (LG)',
+      frontPic: './assets/goods/washingMachines/LGTW4/front.jpeg',
+      otherPic: [
+        './assets/goods/washingMachines/LGTW4/1.jpeg',
+        './assets/goods/washingMachines/LGTW4/2.jpeg',
+        './assets/goods/washingMachines/LGTW4/3.jpeg',
+        './assets/goods/washingMachines/LGTW4/4.jpeg',
+      ],
+    },
+    {
+      id: 22,
+      name: 'Bosch Serie 4',
+      price: 1400,
+      description:
+        'отдельностоящая, автоматическая стиральная машина, загрузка до 8 кг, отжим 1200 об/мин, глубина 55 см (с люком 60 см), 16 программ',
+      frontPic: './assets/goods/washingMachines/BoschSerie4/front.jpeg',
+      otherPic: ['./assets/goods/washingMachines/BoschSerie4/front.jpeg'],
+    },
+    {
+      id: 23,
+      name: 'Electrolux TimeCare 500',
+      price: 1100,
+      description:
+        'отдельностоящая, автоматическая стиральная машина, загрузка до 6 кг, отжим 1200 об/мин, глубина 59.9 см, 14 программ',
+      frontPic:
+        './assets/goods/washingMachines/ElectroluxTimeCare500/front.jpeg',
+      otherPic: [
+        './assets/goods/washingMachines/ElectroluxTimeCare500/front.jpeg',
+        './assets/goods/washingMachines/ElectroluxTimeCare500/1.jpeg',
+      ],
+    },
+    {
+      id: 24,
+      name: 'ATLANT СМА 40',
+      price: 500,
+      description:
+        'отдельностоящая, автоматическая стиральная машина, загрузка до 4 кг, отжим 1000 об/мин, глубина 33.7 см (с люком 41.5 см), энергопотребление A+, 10 программ',
+      frontPic: './assets/goods/washingMachines/ATLANTСМА40/front.jpeg',
+      otherPic: [
+        './assets/goods/washingMachines/ATLANTСМА40/1.jpeg',
+        './assets/goods/washingMachines/ATLANTСМА40/2.jpeg',
+        './assets/goods/washingMachines/ATLANTСМА40/3.jpeg',
+        './assets/goods/washingMachines/ATLANTСМА40/4.jpeg',
+      ],
+    },
+    {
+      id: 25,
+      name: 'BEKO WDB7425',
+      price: 500,
+      description:
+        'отдельностоящая, стирально-сушильная машина, сушка: естественная конденсация, с паром, загрузка до 7 кг, отжим 1200 об/мин, глубина 50 см, энергопотребление B, 15 программ',
+      frontPic: './assets/goods/washingMachines/BEKOWDB7425/front.jpeg',
+      otherPic: [
+        './assets/goods/washingMachines/BEKOWDB7425/1.jpeg',
+        './assets/goods/washingMachines/BEKOWDB7425/2.jpeg',
+      ],
+    },
+  ],
 }

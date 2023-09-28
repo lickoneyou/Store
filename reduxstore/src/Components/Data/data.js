@@ -125,18 +125,90 @@ export const data = {
         './assets/goods/TVs/TCL50/4.jpeg',
       ],
     },
-     {
+    {
       id: 10,
       name: 'Blaupunkt 65',
       price: 880,
       description:
         '65" 3840x2160 (4K UHD), частота матрицы 60 Гц, Smart TV (LG webOS), HDR, Wi-Fi',
-      frontPic: './assets/goods/TVs/TCL50/front.jpeg',
+      frontPic: './assets/goods/TVs/Blaupunkt65/front.jpeg',
       otherPic: [
         './assets/goods/TVs/Blaupunkt65/1.jpeg',
         './assets/goods/TVs/Blaupunkt65/2.jpeg',
         './assets/goods/TVs/Blaupunkt65/3.jpeg',
         './assets/goods/TVs/Blaupunkt65/4.jpeg',
+      ],
+    },
+  ],
+  smartphones: [
+    {
+      id: 11,
+      name: 'POCO F5',
+      price: 180,
+      description:
+        'Android, экран 6.67" AMOLED (1080x2400) 120 Гц, Qualcomm Snapdragon 7+ Gen 2, ОЗУ 12 ГБ, память 256 ГБ, камера 64 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM), влагозащита IP53',
+      frontPic: './assets/goods/smartphones/POCOF5/front.jpeg',
+      otherPic: [
+        './assets/goods/smartphones/POCOF5/1.jpeg',
+        './assets/goods/smartphones/POCOF5/2.jpeg',
+        './assets/goods/smartphones/POCOF5/3.jpeg',
+        './assets/goods/smartphones/POCOF5/4.jpeg',
+      ],
+    },
+    {
+      id: 12,
+      name: 'HONOR 90',
+      price: 1180,
+      description:
+        'Android, экран 6.7" AMOLED (1200x2664) 120 Гц, Qualcomm Snapdragon 7 Gen 1 Accelerated Edition, ОЗУ 8 ГБ, память 256 ГБ, камера 200 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM/eSIM)',
+      frontPic: './assets/goods/smartphones/HONOR90/front.jpeg',
+      otherPic: [
+        './assets/goods/smartphones/HONOR90/1.jpeg',
+        './assets/goods/smartphones/HONOR90/2.jpeg',
+        './assets/goods/smartphones/HONOR90/3.jpeg',
+        './assets/goods/smartphones/HONOR90/4.jpeg',
+      ],
+    },
+    {
+      id: 13,
+      name: 'Infinix Note 30',
+      price: 270,
+      description:
+        'Android, экран 6.78" IPS (1080x2460) 120 Гц, Mediatek Helio G99, ОЗУ 8 ГБ, память 128 ГБ, поддержка карт памяти, камера 64 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM), влагозащита IP53',
+      frontPic: './assets/goods/smartphones/InfinixNote30/front.jpeg',
+      otherPic: [
+        './assets/goods/smartphones/InfinixNote30/1.jpeg',
+        './assets/goods/smartphones/InfinixNote30/2.jpeg',
+        './assets/goods/smartphones/InfinixNote30/3.jpeg',
+        './assets/goods/smartphones/InfinixNote30/4.jpeg',
+      ],
+    },
+    {
+      id: 14,
+      name: 'Oppo Reno8',
+      price: 50,
+      description:
+        'Android, экран 6.43" AMOLED (1080x2400) 90 Гц, Mediatek Helio G99, ОЗУ 8 ГБ, память 128 ГБ, поддержка карт памяти, камера 100 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM)',
+      frontPic: './assets/goods/smartphones/OppoReno8/front.jpeg',
+      otherPic: [
+        './assets/goods/smartphones/OppoReno8/1.jpeg',
+        './assets/goods/smartphones/OppoReno8/2.jpeg',
+        './assets/goods/smartphones/OppoReno8/3.jpeg',
+        './assets/goods/smartphones/OppoReno8/4.jpeg',
+      ],
+    },
+    {
+      id: 15,
+      name: 'Apple iPhone 15 Pro Max',
+      price: 1050,
+      description:
+        'Apple iOS, экран 6.7" OLED (1290x2796) 120 Гц, Apple A17 Pro, ОЗУ 8 ГБ, память 256 ГБ, камера 48 Мп, 1 SIM (nano-SIM/eSIM), влагозащита IP68',
+      frontPic: './assets/goods/smartphones/AppleiPhone15ProMax/front.jpeg',
+      otherPic: [
+        './assets/goods/smartphones/AppleiPhone15ProMax/1.jpeg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/2.jpeg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/3.jpeg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/4.jpeg',
       ],
     },
   ],

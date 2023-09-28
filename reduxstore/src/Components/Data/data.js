@@ -69,4 +69,75 @@ export const data = {
       ],
     },
   ],
+  TVs: [
+    {
+      id: 6,
+      name: 'Xiaomi TV Q2 55',
+      price: 580,
+      description:
+        '55" 3840x2160 (4K UHD), частота матрицы 60 Гц, Smart TV (Android TV), HDR, Wi-Fi',
+      frontPic: './assets/goods/TVs/XiaomiTVQ255/front.jpeg',
+      otherPic: [
+        './assets/goods/TVs/XiaomiTVQ255/1.jpeg',
+        './assets/goods/TVs/XiaomiTVQ255/2.jpeg',
+        './assets/goods/TVs/XiaomiTVQ255/3.jpeg',
+        './assets/goods/TVs/XiaomiTVQ255/4.jpeg',
+      ],
+    },
+    {
+      id: 7,
+      name: 'LG B3',
+      price: 770,
+      description:
+        '65" 3840x2160 (4K UHD), матрица OLED, частота матрицы 120 Гц, Smart TV (LG webOS), HDR, Wi-Fi',
+      frontPic: './assets/goods/TVs/LGB3/front.jpeg',
+      otherPic: [
+        './assets/goods/TVs/LGB3/1.jpeg',
+        './assets/goods/TVs/LGB3/2.jpeg',
+        './assets/goods/TVs/LGB3/3.jpeg',
+        './assets/goods/TVs/LGB3/4.jpeg',
+      ],
+    },
+    {
+      id: 8,
+      name: 'Philips 43',
+      price: 270,
+      description:
+        '43" 3840x2160 (4K UHD), частота матрицы 60 Гц, Smart TV (Android TV), HDR, Wi-Fi',
+      frontPic: './assets/goods/TVs/Philips43/front.jpeg',
+      otherPic: [
+        './assets/goods/TVs/Philips43/1.jpeg',
+        './assets/goods/TVs/Philips43/2.jpeg',
+        './assets/goods/TVs/Philips43/3.jpeg',
+      ],
+    },
+    {
+      id: 9,
+      name: 'TCL 50',
+      price: 270,
+      description:
+        '50" 3840x2160 (4K UHD), матрица VA, частота матрицы 60 Гц, индекс динамичных сцен 3100, Smart TV (Google TV), HDR, Wi-Fi',
+      frontPic: './assets/goods/TVs/TCL50/front.jpeg',
+      otherPic: [
+        './assets/goods/TVs/TCL50/1.jpeg',
+        './assets/goods/TVs/TCL50/2.jpeg',
+        './assets/goods/TVs/TCL50/3.jpeg',
+        './assets/goods/TVs/TCL50/4.jpeg',
+      ],
+    },
+     {
+      id: 10,
+      name: 'Blaupunkt 65',
+      price: 880,
+      description:
+        '65" 3840x2160 (4K UHD), частота матрицы 60 Гц, Smart TV (LG webOS), HDR, Wi-Fi',
+      frontPic: './assets/goods/TVs/TCL50/front.jpeg',
+      otherPic: [
+        './assets/goods/TVs/Blaupunkt65/1.jpeg',
+        './assets/goods/TVs/Blaupunkt65/2.jpeg',
+        './assets/goods/TVs/Blaupunkt65/3.jpeg',
+        './assets/goods/TVs/Blaupunkt65/4.jpeg',
+      ],
+    },
+  ],
 }

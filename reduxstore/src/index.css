@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Nuckle";
+  src: url("../public/font/Nuckle-Medium.ttf");
+}
+
+html {
+  max-width: 1600px;
+  min-width: 1600px;
+  margin: 0 auto;
+}

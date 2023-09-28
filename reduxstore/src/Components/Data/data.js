@@ -212,4 +212,77 @@ export const data = {
       ],
     },
   ],
+  refrigerators: [
+    {
+      id: 16,
+      name: 'LG DoorCooling',
+      price: 820,
+      description:
+        'отдельностоящий, полный No Frost, электронное управление, класс A++, полезный объём: 384 л (277 + 107 л), инверторный компрессор, зона свежести, перенавешиваемые двери, складная полка, лоток для яиц, 59.5x68.2x203 см, белый',
+      frontPic: './assets/goods/refrigerators/LGDoorCooling/front.jpeg',
+      otherPic: [
+        './assets/goods/refrigerators/LGDoorCooling/1.jpeg',
+        './assets/goods/refrigerators/LGDoorCooling/2.jpeg',
+        './assets/goods/refrigerators/LGDoorCooling/3.jpeg',
+        './assets/goods/refrigerators/LGDoorCooling/4.jpeg',
+      ],
+    },
+    {
+      id: 17,
+      name: 'Electrolux ColdSense 500',
+      price: 340,
+      description:
+        'встраиваемый, скользящие направляющие, без No Frost, электронное управление, полезный объём: 268 л (196 + 72 л), перенавешиваемые двери, лоток для яиц, 54x54.9x177.9 см, белый',
+      frontPic:
+        './assets/goods/refrigerators/ElectroluxColdSense500/front.jpeg',
+      otherPic: [
+        './assets/goods/refrigerators/ElectroluxColdSense500/1.jpeg',
+        './assets/goods/refrigerators/ElectroluxColdSense500/2.jpeg',
+        './assets/goods/refrigerators/ElectroluxColdSense500/3.jpeg',
+        './assets/goods/refrigerators/ElectroluxColdSense500/4.jpeg',
+      ],
+    },
+    {
+      id: 18,
+      name: 'ATLANT ХМ 46',
+      price: 210,
+      description:
+        'отдельностоящий, полный No Frost, электронное управление, класс A+, полезный объём: 357 л (211 + 125 л), зона свежести, перенавешиваемые двери, автодоводчик дверей, складная полка, полка для вина, подвесной контейнер, лоток для яиц, масленка, 59.5x66x206.8 см, белый',
+      frontPic: './assets/goods/refrigerators/ATLANTХМ46/front.jpeg',
+      otherPic: [
+        './assets/goods/refrigerators/ATLANTХМ46/1.jpeg',
+        './assets/goods/refrigerators/ATLANTХМ46/2.jpeg',
+        './assets/goods/refrigerators/ATLANTХМ46/3.jpeg',
+        './assets/goods/refrigerators/ATLANTХМ46/4.jpeg',
+      ],
+    },
+    {
+      id: 19,
+      name: 'Samsung RB37',
+      price: 2550,
+      description:
+        'отдельностоящий, полный No Frost, электронное управление, класс A+, полезный объём: 367 л (269 + 98 л), инверторный компрессор, перенавешиваемые двери, лоток для яиц, 59.5x64.7x201 см, черный',
+      frontPic: './assets/goods/refrigerators/SamsungRB37/front.jpeg',
+      otherPic: [
+        './assets/goods/refrigerators/SamsungRB37/1.jpeg',
+        './assets/goods/refrigerators/SamsungRB37/2.jpeg',
+        './assets/goods/refrigerators/SamsungRB37/3.jpeg',
+        './assets/goods/refrigerators/SamsungRB37/4.jpeg',
+      ],
+    },
+    {
+      id: 20,
+      name: 'TECHNO FF4',
+      price: 3100,
+      description:
+        'отдельностоящий, полный No Frost, электронное управление, класс A++, полезный объём: 512 л (364 + 148 л), инверторный компрессор, зона свежести, подсветка корпуса, подставка-лоток для бутылок, лоток для яиц, 91x69x190 см, нержавеющая сталь',
+      frontPic: './assets/goods/refrigerators/TECHNOFF4/front.jpeg',
+      otherPic: [
+        './assets/goods/refrigerators/TECHNOFF4/1.jpeg',
+        './assets/goods/refrigerators/TECHNOFF4/2.jpeg',
+        './assets/goods/refrigerators/TECHNOFF4/3.jpeg',
+        './assets/goods/refrigerators/TECHNOFF4/4.jpeg',
+      ],
+    },
+  ],
 }

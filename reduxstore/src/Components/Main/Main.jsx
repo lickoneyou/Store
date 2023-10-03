@@ -15,6 +15,7 @@ const Main = () => {
       <Slider1 />
       <Categories />
       <Goods myGoods={myGoods} />
+      <Slider1 />
     </main>
   )
 }

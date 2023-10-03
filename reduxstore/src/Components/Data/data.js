@@ -203,7 +203,7 @@ const data = {
       price: 1050,
       description:
         'Apple iOS, экран 6.7" OLED (1290x2796) 120 Гц, Apple A17 Pro, ОЗУ 8 ГБ, память 256 ГБ, камера 48 Мп, 1 SIM (nano-SIM/eSIM), влагозащита IP68',
-      frontPic: './assets/goods/smartphones/AppleiPhone15ProMax/front.jpeg',
+      frontPic: './assets/goods/smartphones/AppleiPhone15ProMax/front.jpg',
       otherPic: [
         './assets/goods/smartphones/AppleiPhone15ProMax/1.jpeg',
         './assets/goods/smartphones/AppleiPhone15ProMax/2.jpeg',
@@ -248,7 +248,7 @@ const data = {
       price: 210,
       description:
         'отдельностоящий, полный No Frost, электронное управление, класс A+, полезный объём: 357 л (211 + 125 л), зона свежести, перенавешиваемые двери, автодоводчик дверей, складная полка, полка для вина, подвесной контейнер, лоток для яиц, масленка, 59.5x66x206.8 см, белый',
-      frontPic: './assets/goods/refrigerators/ATLANTХМ46/front.jpeg',
+      frontPic: './assets/goods/refrigerators/ATLANTХМ46/front.png',
       otherPic: [
         './assets/goods/refrigerators/ATLANTХМ46/1.jpeg',
         './assets/goods/refrigerators/ATLANTХМ46/2.jpeg',

@@ -1,5 +1,5 @@
 const data = {
-  laptops: [
+  Laptops: [
     {
       id: 1,
       name: 'Macbook Air 13',
@@ -140,7 +140,7 @@ const data = {
       ],
     },
   ],
-  smartphones: [
+  Smartphones: [
     {
       id: 11,
       name: 'POCO F5',
@@ -212,7 +212,7 @@ const data = {
       ],
     },
   ],
-  refrigerators: [
+  Fridges: [
     {
       id: 16,
       name: 'LG DoorCooling',
@@ -285,7 +285,7 @@ const data = {
       ],
     },
   ],
-  washingMachines: [
+  'Wash Machine': [
     {
       id: 21,
       name: 'LG TW4',

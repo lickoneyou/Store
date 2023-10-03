@@ -9,3 +9,7 @@ html {
   margin: 0 auto;
   font-family: 'Nuckle';
 }
+
+.clickScale {
+  transform: scale(1.2);
+}

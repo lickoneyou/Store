@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Catedories.module.css'
+import { useDispatch } from 'react-redux'
 
 const categories = [
   { name: 'Smartphones', pic: './assets/Categories/phone.png' },
@@ -10,12 +11,30 @@ const categories = [
 ]
 
 const Categories = () => {
+  const dispatch = useDispatch()
+
+  const filter = (goods) => {
+    dispatch({ type: goods })
+  }
+
+  const addScale = (target) => {
+  target.classList.toggle('clickScale')
+  // document.querySelector(`.${styles.categoriesWrapper}`).classList.toggle('clickScale')
+  }
+
   return (
     <section className={styles.categories}>
       <h2 className={styles.categoriesTitle}>Categories</h2>
       <div className={styles.categoriesWrapper}>
         {categories.map((el, ind) => (
-          <div key={el + ind} className={styles.categoriWrapper}>
+          <div
+            key={el + ind}
+            className={styles.categoriWrapper}
+            onClick={function (event) {
+              filter(el.name)
+              addScale(event.currentTarget)
+            }}
+          >
             <img src={el.pic} alt={el.name} />
             <p>{el.name}</p>
           </div>

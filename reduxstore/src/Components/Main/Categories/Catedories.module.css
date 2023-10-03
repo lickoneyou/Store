@@ -33,3 +33,7 @@
 .categoriesTitle {
   font-size: 28px;
 }
+
+.clickScale {
+  transform: scale(1.2);
+}

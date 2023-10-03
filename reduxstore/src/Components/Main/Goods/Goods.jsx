@@ -6,7 +6,6 @@ const Goods = ({ myGoods }) => {
   for (const key in myGoods) {
     goods.push(...myGoods[key])
   }
-  console.log(goods)
   return (
     <section className={styles.goods}>
       <h2>Goods</h2>

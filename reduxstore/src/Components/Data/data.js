@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   laptops: [
     {
       id: 1,
@@ -350,3 +350,5 @@ export const data = {
     },
   ],
 }
+
+export default data

@@ -51,6 +51,8 @@ const Product = ({ location }) => {
             <b>{product.name}</b>
           </h2>
           <p>{product.description}</p>
+          <div>
+          <p style={{ textAlign: 'end', marginBottom: '10px'}}><b>Price {product.price}$</b></p>
           <button
             onClick={() => {
               if (goodsState.goods.find((elem) => elem.id == product.id)) {
@@ -66,6 +68,7 @@ const Product = ({ location }) => {
               ? "Remove from Cart"
               : "Add to Cart"}
           </button>
+          </div>
         </div>
       </div>
     </>

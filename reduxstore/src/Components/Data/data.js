@@ -149,10 +149,10 @@ const data = {
         'Android, экран 6.67" AMOLED (1080x2400) 120 Гц, Qualcomm Snapdragon 7+ Gen 2, ОЗУ 12 ГБ, память 256 ГБ, камера 64 Мп, аккумулятор 5000 мАч, 2 SIM (nano-SIM), влагозащита IP53',
       frontPic: './assets/goods/smartphones/POCOF5/front.jpeg',
       otherPic: [
-        './assets/goods/smartphones/POCOF5/1.jpeg',
+        './assets/goods/smartphones/POCOF5/1.png',
         './assets/goods/smartphones/POCOF5/2.jpeg',
         './assets/goods/smartphones/POCOF5/3.jpeg',
-        './assets/goods/smartphones/POCOF5/4.jpeg',
+        './assets/goods/smartphones/POCOF5/4.png',
       ],
     },
     {
@@ -205,10 +205,10 @@ const data = {
         'Apple iOS, экран 6.7" OLED (1290x2796) 120 Гц, Apple A17 Pro, ОЗУ 8 ГБ, память 256 ГБ, камера 48 Мп, 1 SIM (nano-SIM/eSIM), влагозащита IP68',
       frontPic: './assets/goods/smartphones/AppleiPhone15ProMax/front.jpg',
       otherPic: [
-        './assets/goods/smartphones/AppleiPhone15ProMax/1.jpeg',
-        './assets/goods/smartphones/AppleiPhone15ProMax/2.jpeg',
-        './assets/goods/smartphones/AppleiPhone15ProMax/3.jpeg',
-        './assets/goods/smartphones/AppleiPhone15ProMax/4.jpeg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/1.jpg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/2.jpg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/3.jpg',
+        './assets/goods/smartphones/AppleiPhone15ProMax/4.jpg',
       ],
     },
   ],
@@ -250,10 +250,10 @@ const data = {
         'отдельностоящий, полный No Frost, электронное управление, класс A+, полезный объём: 357 л (211 + 125 л), зона свежести, перенавешиваемые двери, автодоводчик дверей, складная полка, полка для вина, подвесной контейнер, лоток для яиц, масленка, 59.5x66x206.8 см, белый',
       frontPic: './assets/goods/refrigerators/ATLANTХМ46/front.png',
       otherPic: [
-        './assets/goods/refrigerators/ATLANTХМ46/1.jpeg',
-        './assets/goods/refrigerators/ATLANTХМ46/2.jpeg',
-        './assets/goods/refrigerators/ATLANTХМ46/3.jpeg',
-        './assets/goods/refrigerators/ATLANTХМ46/4.jpeg',
+        './assets/goods/refrigerators/ATLANTХМ46/1.png',
+        './assets/goods/refrigerators/ATLANTХМ46/2.png',
+        './assets/goods/refrigerators/ATLANTХМ46/3.png',
+        './assets/goods/refrigerators/ATLANTХМ46/4.png',
       ],
     },
     {

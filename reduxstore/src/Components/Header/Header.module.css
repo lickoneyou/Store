@@ -15,6 +15,11 @@ header {
   color: white;
 }
 
+header a {
+  display: flex;
+  align-items: center;
+}
+
 .katalog::before {
   content: "";
   background-image: url("../../../public/assets/icons/menu.png");
@@ -26,8 +31,12 @@ header {
   margin-right: 10px;
 }
 
+.inputWrapper{
+  display: flex;
+}
+
 header div > input {
-  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
   border: 1px solid #e4e7ee;
   background: #fff;
   width: 396px;

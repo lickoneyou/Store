@@ -10,7 +10,7 @@ const Header = () => {
         <img src="./assets/Logo.png" alt="Logo" />
       </a>
       <button className={styles.katalog}>KATALOG</button>
-      <div>
+      <div className={styles.inputWrapper}>
         <input type="text" placeholder="Maxsulotlarni izlash" />
         <button>
           <img src="./assets/icons/search.png" alt="search" />

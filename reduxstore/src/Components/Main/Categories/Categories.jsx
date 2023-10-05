@@ -17,11 +17,6 @@ const Categories = () => {
     dispatch({ type: goods })
   }
 
-  const addScale = (target) => {
-  target.classList.toggle('clickScale')
-  // document.querySelector(`.${styles.categoriesWrapper}`).classList.toggle('clickScale')
-  }
-
   return (
     <section className={styles.categories}>
       <h2 className={styles.categoriesTitle}>Categories</h2>
@@ -32,7 +27,6 @@ const Categories = () => {
             className={styles.categoriWrapper}
             onClick={function (event) {
               filter(el.name)
-              addScale(event.currentTarget)
             }}
           >
             <img src={el.pic} alt={el.name} />

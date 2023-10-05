@@ -1,15 +1,31 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import Catalog from "./Catalog/Catalog";
 
 const Header = () => {
   const total = useSelector((state) => state.cart.price);
+  const catalogState = useSelector((state) => state.catalog);
+  const dispatch = useDispatch();
+
+  const openCatalog = () => {
+    if (catalogState.status === "close")
+      dispatch({ type: "OPEN", payload: "open" });
+  };
+
   return (
     <header>
+      <Catalog />
       <a href="#/">
         <img src="./assets/Logo.png" alt="Logo" />
       </a>
-      <button className={styles.katalog}>KATALOG</button>
+      <button
+        data-name="catalog"
+        className={styles.katalog}
+        onClick={openCatalog}
+      >
+        CATALOG
+      </button>
       <div className={styles.inputWrapper}>
         <input type="text" placeholder="Maxsulotlarni izlash" />
         <button>
@@ -18,7 +34,7 @@ const Header = () => {
       </div>
       <div className={styles.cartWrapper}>
         <p>
-          <b>{total > 0 ? total + '$' : ''}</b>
+          <b>{total > 0 ? total + "$" : ""}</b>
         </p>
         <a href="#Cart">
           <img

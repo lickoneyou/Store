@@ -4,6 +4,9 @@ header {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  position: relative;
+  clip-path: inset(0 0 -1000vh 0);
+  z-index: 100;
 }
 
 .katalog {

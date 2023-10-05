@@ -1,0 +1,10 @@
+.catalog {
+  position: fixed;
+  left: -400px;
+  top: 0;
+  width: 28%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.03);
+  transition: all 500ms ease;
+  z-index: 999999999999999999999999;
+}

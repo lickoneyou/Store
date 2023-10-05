@@ -65,9 +65,21 @@ const reducerCart = (state = defaultCartState, action) => {
   }
 };
 
+const catalogReducer = (state = {left: -400, status: 'close'}, action) => {
+  switch (action.type) {
+    case "OPEN":
+      return {...state, left: 200, status: action.payload};
+    case "CLOSE":
+      return {...state, left: -400, status: action.payload};
+    default:
+      return state;
+  }
+};
+
 const reducers = combineReducers({
   filter: reducerFilter,
   cart: reducerCart,
+  catalog: catalogReducer
 });
 
 const store = configureStore({

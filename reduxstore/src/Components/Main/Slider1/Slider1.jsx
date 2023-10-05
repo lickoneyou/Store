@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
+import styles from './Slider1.module.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import styles from './Slider1.module.css'
 
 const Slider1 = () => {
   var settings = {
@@ -16,7 +16,7 @@ const Slider1 = () => {
     cssEase: 'linear',
   }
   return (
-    <Slider className={styles.slider} {...settings}>
+    <Slider className={styles.slider} {...settings} style={{zIndex: 1}}>
       <div>
         <img className={styles.slide} src="./assets/Slider/1.png" />
       </div>

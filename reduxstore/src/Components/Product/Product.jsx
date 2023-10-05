@@ -18,6 +18,7 @@ const Product = ({ location }) => {
     refImg.current.src = target.src;
   };
 
+  const good = goods.find((elem) => elem.id == product.id);
   return (
     <>
       <div className={styles.productWrapper}>
@@ -51,7 +52,6 @@ const Product = ({ location }) => {
           <p>{product.description}</p>
           <button
             onClick={() => {
-              const good = goods.find((elem) => elem.id == product.id);
               if (goodsState.goods.find((elem) => elem.id == product.id)) {
                 dispatch({ type: "REMOVE_GOOD", payload: good });
               } else {
@@ -59,7 +59,9 @@ const Product = ({ location }) => {
               }
             }}
           >
-            Add to Cart
+            {goodsState.goods.find((elem) => elem.id == product.id)
+              ? "Remove from Cart"
+              : "Add to Cart"}
           </button>
         </div>
       </div>

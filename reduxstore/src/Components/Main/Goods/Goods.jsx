@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 
 const Goods = ({ myGoods }) => {
   const goodsState = useSelector(state => state.cart)
-  console.log(goodsState);
   const dispatch = useDispatch()
   const goods = []
   for (const key in myGoods) {

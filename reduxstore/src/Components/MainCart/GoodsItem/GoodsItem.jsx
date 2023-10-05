@@ -24,7 +24,6 @@ const GoodsItem = ({ elem, index }) => {
           <button
             onClick={() => {
               dispach({ type: "REMOVE_GOOD", payload: elem });
-              elem.inCart = false;
             }}
           >
             Remove Item

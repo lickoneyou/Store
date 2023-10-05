@@ -46,7 +46,6 @@ const defaultCartState = {
 const reducerCart = (state = defaultCartState, action) => {
   switch (action.type) {
     case "ADD_GOOD":
-      action.payload.inCart = true
       return {
         ...state,
         goods: [...state.goods, action.payload],

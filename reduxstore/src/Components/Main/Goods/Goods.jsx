@@ -25,7 +25,6 @@ const Goods = ({ myGoods }) => {
                   const good = goods.find(elem => elem.id == el.id)
                   if(goodsState.goods.find(elem => elem.id == el.id)){
                     dispatch({type: 'REMOVE_GOOD', payload: good})
-                    el.inCart = false
                   } else {
                     dispatch({type: 'ADD_GOOD', payload: good})
                   }

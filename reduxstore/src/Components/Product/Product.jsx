@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import styles from "./Product.module.css";
 import data from "../Data/data";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Product = ({ location }) => {
-  const dispach = useDispatch()
+  const goodsState = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
   const refImg = useRef();
   const goods = [];
   for (const key in data) {
@@ -20,7 +21,9 @@ const Product = ({ location }) => {
   return (
     <>
       <div className={styles.productWrapper}>
-        <a href="#/" className={styles.back}>Back</a>
+        <a href="#/" className={styles.back}>
+          Back
+        </a>
         <div className={styles.img}>
           <img
             className={styles.titleImg}
@@ -46,7 +49,18 @@ const Product = ({ location }) => {
             <b>{product.name}</b>
           </h2>
           <p>{product.description}</p>
-          <button onClick={() => {dispach({ type: "ADD_GOOD", payload: product })}}>Add to Cart</button>
+          <button
+            onClick={() => {
+              const good = goods.find((elem) => elem.id == product.id);
+              if (goodsState.goods.find((elem) => elem.id == product.id)) {
+                dispatch({ type: "REMOVE_GOOD", payload: good });
+              } else {
+                dispatch({ type: "ADD_GOOD", payload: good });
+              }
+            }}
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </>

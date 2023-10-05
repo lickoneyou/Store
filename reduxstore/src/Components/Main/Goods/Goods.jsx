@@ -21,10 +21,11 @@ const Goods = ({ myGoods }) => {
               <p>{el.name}</p>
               <div className={styles.goodsBtns}>
                 <button>Open</button>
-                <img style={{cursor: 'pointer'}} src="./assets/icons/korzina.png" alt="cart" onClick={() => {
+                <img className='addCart__Img' style={{cursor: 'pointer', boxShadow: el.inCart ? '0px 1px 3px 4px #0f0cdf' : ''}} src="./assets/icons/korzina.png" alt="cart" onClick={(event) => {
                   const good = goods.find(elem => elem.id == el.id)
                   if(goodsState.goods.find(elem => elem.id == el.id)){
                     dispatch({type: 'REMOVE_GOOD', payload: good})
+                    el.inCart = false
                   } else {
                     dispatch({type: 'ADD_GOOD', payload: good})
                   }

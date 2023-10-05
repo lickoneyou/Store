@@ -5,7 +5,6 @@ import App from "./App";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import data from "./Components/Data/data.js";
 import { Provider } from "react-redux";
-import { act } from "@testing-library/react";
 
 const defaultState = {
   goods: {},
@@ -47,17 +46,19 @@ const defaultCartState = {
 const reducerCart = (state = defaultCartState, action) => {
   switch (action.type) {
     case "ADD_GOOD":
+      action.payload.inCart = true
       return {
         ...state,
         goods: [...state.goods, action.payload],
         price: state.price + action.payload.price,
       };
 
-      case "REMOVE_GOOD":
+    case "REMOVE_GOOD":
       return {
         ...state,
-        goods: [...state.goods.filter(el=> el.id !== action.payload.id)],
-        price: state.price > 0 ? state.price - action.payload.price : state.price,
+        goods: [...state.goods.filter((el) => el.id !== action.payload.id)],
+        price:
+          state.price > 0 ? state.price - action.payload.price : state.price,
       };
 
     default:

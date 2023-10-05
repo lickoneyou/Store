@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from './Goods.module.css'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Goods = ({ myGoods }) => {
+  const goodsState = useSelector(state => state.cart)
+  console.log(goodsState);
+  const dispatch = useDispatch()
   const goods = []
   for (const key in myGoods) {
     goods.push(...myGoods[key])
@@ -18,7 +22,14 @@ const Goods = ({ myGoods }) => {
               <p>{el.name}</p>
               <div className={styles.goodsBtns}>
                 <button>Open</button>
-                <img src="./assets/icons/korzina.png" alt="cart" />
+                <img style={{cursor: 'pointer'}} src="./assets/icons/korzina.png" alt="cart" onClick={() => {
+                  const good = goods.find(elem => elem.id == el.id)
+                  if(goodsState.goods.find(elem => elem.id == el.id)){
+                    dispatch({type: 'REMOVE_GOOD', payload: good})
+                  } else {
+                    dispatch({type: 'ADD_GOOD', payload: good})
+                  }
+                }}/>
               </div>
             </div>
           )

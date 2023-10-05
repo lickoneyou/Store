@@ -3,12 +3,19 @@ import './reset.css';
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import Footer from './Components/Footer/Footer';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import MainCart from './Components/MainCart/MainCart';
 
 function App() {
   return (
     <div className="App">
     <Header />
-    <Main />
+    <Router>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path="/Cart" element={<MainCart />} />
+          </Routes>
+        </Router>
     <Footer />
     </div>
   );

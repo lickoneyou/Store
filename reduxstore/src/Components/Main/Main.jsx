@@ -8,7 +8,7 @@ import data from '../Data/data'
 
 const Main = () => {
   const myGoods = useSelector((state) => {
-    return Object.keys(state).length === 0 || Object.values(state).every((el) => el ? false : data) ? data : state
+    return Object.keys(state.filter).length === 0 || Object.values(state.filter).every((el) => el ? false : data) ? data : state.filter
   })
   return (
     <main>

@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <header>
-      <img src="./assets/Logo.png" alt="Logo" />
+      <a href="#/"><img src="./assets/Logo.png" alt="Logo" /></a>
       <button className={styles.katalog}>KATALOG</button>
       <div>
         <input type='text' placeholder='Maxsulotlarni izlash'/>
@@ -12,7 +12,7 @@ const Header = () => {
           <img src="./assets/icons/search.png" alt="search" />
         </button>
       </div>
-      <img className={styles.cart} src="./assets/icons/Korzina.png" alt="search" />
+      <a href="#Cart"><img className={styles.cart} src="./assets/icons/Korzina.png" alt="search" /></a>
     </header>
   )
 }

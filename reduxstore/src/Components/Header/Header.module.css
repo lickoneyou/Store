@@ -47,4 +47,5 @@ header div > button {
 .cart {
   width: 60px;
   height: 100%;
+  cursor: pointer;
 }

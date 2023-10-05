@@ -16,8 +16,8 @@ header {
 }
 
 .katalog::before {
-  content: '';
-  background-image: url('../../../public/assets/icons/menu.png');
+  content: "";
+  background-image: url("../../../public/assets/icons/menu.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 35px;
@@ -33,7 +33,7 @@ header div > input {
   width: 396px;
   height: 100%;
   padding: 14px 18px;
-  font-family: 'Nuckle';
+  font-family: "Nuckle";
 }
 
 header div > button {
@@ -48,4 +48,15 @@ header div > button {
   width: 60px;
   height: 100%;
   cursor: pointer;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cartWrapper p{
+margin-right: 20px;
+font-size: 30px;
+width: 100px;
 }

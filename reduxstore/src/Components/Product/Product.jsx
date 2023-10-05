@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import styles from "./Product.module.css";
 import data from "../Data/data";
 import { useDispatch, useSelector } from "react-redux";
+import { showInfoToast, showSuccessToast } from "../Main/Goods/toast";
 
 const Product = ({ location }) => {
   const goodsState = useSelector((state) => state.cart);
@@ -54,8 +55,10 @@ const Product = ({ location }) => {
             onClick={() => {
               if (goodsState.goods.find((elem) => elem.id == product.id)) {
                 dispatch({ type: "REMOVE_GOOD", payload: good });
+                showInfoToast(product.name);
               } else {
                 dispatch({ type: "ADD_GOOD", payload: good });
+                showSuccessToast(product.name);
               }
             }}
           >

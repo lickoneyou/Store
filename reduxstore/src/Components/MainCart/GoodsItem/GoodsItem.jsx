@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./GoodsItem.module.css";
 import { useDispatch, useSelector } from "react-redux";
+import { showInfoToast } from "../../Main/Goods/toast";
 
 const GoodsItem = ({ elem, index }) => {
   const stateGoods = useSelector((state) => state.cart);
@@ -24,6 +25,7 @@ const GoodsItem = ({ elem, index }) => {
           <button
             onClick={() => {
               dispach({ type: "REMOVE_GOOD", payload: elem });
+              showInfoToast(elem.name)
             }}
           >
             Remove Item

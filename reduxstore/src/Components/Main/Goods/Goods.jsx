@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Goods.module.css'
 import { useDispatch, useSelector } from 'react-redux'
+import { showInfoToast, showSuccessToast } from './toast'
 
 const Goods = ({ myGoods }) => {
   const goodsState = useSelector(state => state.cart)
@@ -25,8 +26,10 @@ const Goods = ({ myGoods }) => {
                   const good = goods.find(elem => elem.id == el.id)
                   if(goodsState.goods.find(elem => elem.id == el.id)){
                     dispatch({type: 'REMOVE_GOOD', payload: good})
+                    showInfoToast(el.name)
                   } else {
                     dispatch({type: 'ADD_GOOD', payload: good})
+                    showSuccessToast(el.name)
                   }
                 }}/>
               </div>

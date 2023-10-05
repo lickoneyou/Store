@@ -20,7 +20,7 @@ const Goods = ({ myGoods }) => {
               <h3>{el.price}$</h3>
               <p>{el.name}</p>
               <div className={styles.goodsBtns}>
-                <button>Open</button>
+                <a href={'#'+ el.id}>Open</a>
                 <img className='addCart__Img' style={{cursor: 'pointer', boxShadow: el.inCart ? '0px 1px 3px 4px #0f0cdf' : ''}} src="./assets/icons/korzina.png" alt="cart" onClick={(event) => {
                   const good = goods.find(elem => elem.id == el.id)
                   if(goodsState.goods.find(elem => elem.id == el.id)){

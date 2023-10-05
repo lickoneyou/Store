@@ -20,7 +20,7 @@ const GoodsItem = ({ elem, index }) => {
       <div className={styles.priceWrapper}>
         <p>Price: {elem.price}$</p>
         <div className={styles.btnsWrapper}>
-          <button>Open</button>
+          <a href={'#' + elem.id}>Open</a>
           <button
             onClick={() => {
               dispach({ type: "REMOVE_GOOD", payload: elem });

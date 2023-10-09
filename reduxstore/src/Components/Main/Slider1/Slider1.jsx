@@ -1,8 +1,8 @@
-import React from 'react'
-import Slider from 'react-slick'
-import styles from './Slider1.module.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import React from "react";
+import Slider from "react-slick";
+import styles from "./Slider1.module.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Slider1 = () => {
   var settings = {
@@ -13,10 +13,10 @@ const Slider1 = () => {
     autoplay: true,
     speed: 5000,
     autoplaySpeed: 2000,
-    cssEase: 'linear',
-  }
+    cssEase: "linear",
+  };
   return (
-    <Slider className={styles.slider} {...settings} style={{zIndex: 1}}>
+    <Slider className={styles.slider} {...settings} style={{ zIndex: 1 }}>
       <div>
         <img className={styles.slide} src="./assets/Slider/1.png" />
       </div>
@@ -27,7 +27,7 @@ const Slider1 = () => {
         <img className={styles.slide} src="./assets/Slider/3.png" />
       </div>
     </Slider>
-  )
-}
+  );
+};
 
-export default Slider1
+export default Slider1;

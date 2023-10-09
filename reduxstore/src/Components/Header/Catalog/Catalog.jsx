@@ -23,7 +23,7 @@ const Catalog = () => {
     <div
       data-name="catalog"
       className={styles.catalog}
-      style={{ left: catalogState.left }}
+      style={{ marginLeft: catalogState.left }}
     >
       {categories.map((el, ind) => (
         <div

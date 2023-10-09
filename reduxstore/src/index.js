@@ -80,12 +80,12 @@ const reducerCart = (state = defaultCartState, action) => {
   }
 };
 
-const catalogReducer = (state = { left: -400, status: "close" }, action) => {
+const catalogReducer = (state = { left: '-1000px', status: "close" }, action) => {
   switch (action.type) {
     case "OPEN":
-      return { ...state, left: 200, status: action.payload };
+      return { ...state, left: '-185px', status: action.payload };
     case "CLOSE":
-      return { ...state, left: -400, status: action.payload };
+      return { ...state, left: '-1000px', status: action.payload };
     default:
       return state;
   }

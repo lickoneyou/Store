@@ -70,7 +70,11 @@ const reducerCart = (state = defaultCartState, action) => {
         price:
           state.price > 0 ? state.price - action.payload.price : state.price,
       };
-
+    case "REMOVE_ALL":
+      return {
+        goods: [],
+        price: 0,
+      };
     default:
       return state;
   }
@@ -87,10 +91,22 @@ const catalogReducer = (state = { left: -400, status: "close" }, action) => {
   }
 };
 
+const buyPopupReducer = (state = "none", action) => {
+  switch (action.type) {
+    case "flex":
+      return (state = "flex");
+    case "none":
+      return (state = "none");
+    default:
+      return state;
+  }
+};
+
 const reducers = combineReducers({
   filter: reducerFilter,
   cart: reducerCart,
   catalog: catalogReducer,
+  popUp: buyPopupReducer,
 });
 
 const store = configureStore({

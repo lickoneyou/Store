@@ -1,0 +1,78 @@
+.popupWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 1600px;
+  height: 1207px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 101;
+}
+
+.popupWrapper > div > div {
+  margin-bottom: 10px;
+}
+
+.popup {
+  background: white;
+  padding: 30px;
+}
+
+.popupWrapper input {
+  border-radius: 8px;
+  border: 1px solid #e4e7ee;
+  background: #fff;
+  height: 100%;
+  padding: 14px 18px;
+  font-family: "Nuckle";
+}
+
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsWrapper > * {
+  margin-bottom: 10px;
+}
+
+.contactsWrapper *:last-child {
+  margin-bottom: 0;
+}
+
+.popupWrapper button {
+  border-radius: 8px;
+  background: #0d63f3;
+  color: #ffffff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.popupWrapper p {
+  font-size: 26px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.buyWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameWrapper > input,
+.telEmailWrapper > input,
+.cardWrapper > input {
+  margin-right: 10px;
+}
+
+.nameWrapper > input:last-child,
+.telEmailWrapper > input:last-child,
+.cardWrapper > input:last-child {
+  margin-right: 0;
+}

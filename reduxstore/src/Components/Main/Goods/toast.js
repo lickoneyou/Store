@@ -64,6 +64,24 @@ function toast({title = "",message = "",type = "info",duration = 3000}) {
     })
   }
 
+  export function showErrorToast () {
+    toast({
+      title: `Something wrong!`,
+      message: `Сheck the entered data!`,
+      type: "error",
+      duration: 3000
+    })
+  }
+
+  export function showSuccessPurchaseToast () {
+    toast({
+      title: `Success!`,
+      message: `Order is processed!`,
+      type: "success",
+      duration: 3000
+    })
+  }
+
   export function showInfoToast (product) {
     toast({
       title: `${product}`,

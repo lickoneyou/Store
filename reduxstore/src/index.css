@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Nuckle';
-  src: url('../public/font/Nuckle-Medium.ttf');
+  font-family: "Nuckle";
+  src: url("../public/font/Nuckle-Medium.ttf");
 }
 
 html {
   max-width: 1600px;
   min-width: 1600px;
   margin: 0 auto;
-  font-family: 'Nuckle';
+  font-family: "Nuckle";
 }
 
 .clickScale {
@@ -29,11 +29,9 @@ html {
 }
 .btn--size-s {
   padding: 8px 32px;
-
 }
 .btn--size-l {
   padding: 16px 56px;
-
 }
 .btn:hover {
   opacity: 0.8;
@@ -44,23 +42,20 @@ html {
 
 .btn--success {
   background-color: #71be34;
-
 }
 
 .btn--info {
   background-color: #2f86eb;
-
 }
 .btn--warning {
   background-color: #ffb702;
-
 }
 
 .btn--error {
   background-color: #ff623d;
 }
 .btn--disable {
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
   cursor: default;
 }
 
@@ -84,7 +79,7 @@ html {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.25, 1.35);
 }
-.progress-track{
+.progress-track {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -92,7 +87,7 @@ html {
   width: 100%;
   background: #ddd;
 }
-.progress-running{
+.progress-running {
   content: "";
   position: absolute;
   bottom: 0;
@@ -103,16 +98,13 @@ html {
 }
 .progress--success {
   background-color: #71be34;
-
 }
 
 .progress--info {
   background-color: #2f86eb;
-
 }
 .progress--warning {
   background-color: #ffb702;
-
 }
 
 .progress--error {
@@ -120,25 +112,24 @@ html {
 }
 
 @keyframes progress {
-  to{
+  to {
     width: 0%;
   }
 }
 @keyframes slideInLeft {
   from {
-      transform: translateX(calc(100% + 32px));
-      opacity: 0;
+    transform: translateX(calc(100% + 32px));
+    opacity: 0;
   }
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes fadeOut {
   to {
-      opacity: 0;
-      transform: translateX(calc(100% + 32px));
-
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
   }
 }
 
@@ -148,7 +139,6 @@ html {
 
 .toast--success {
   border-color: #47d864;
-
 }
 .toast--success .toast__icon {
   color: #47d864;
@@ -207,4 +197,9 @@ html {
 }
 .toast__close:hover {
   opacity: 0.8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

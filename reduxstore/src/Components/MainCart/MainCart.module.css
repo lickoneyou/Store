@@ -28,9 +28,26 @@
 }
 
 .total {
-    font-size: 26px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 35px;
-  }
-  
+  font-size: 26px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.buyBtn {
+  border-radius: 8px;
+  background: #0d63f3;
+  color: #ffffff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 0px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.buyWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

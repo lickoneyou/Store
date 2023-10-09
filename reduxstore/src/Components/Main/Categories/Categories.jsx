@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Catedories.module.css'
 import { useDispatch } from 'react-redux'
 
-const categories = [
+export const categories = [
   { name: 'Smartphones', pic: './assets/Categories/phone.png' },
   { name: 'TVs', pic: './assets/Categories/televisor.png' },
   { name: 'Laptops', pic: './assets/Categories/laptop.png' },

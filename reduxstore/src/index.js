@@ -11,6 +11,11 @@ const defaultState = {
 };
 
 const reducerFilter = (state = defaultState.goods, action) => {
+  const goods = [];
+  for (const key in data) {
+    goods.push(...data[key]);
+  }
+
   switch (action.type) {
     case "Smartphones":
       return Array.isArray(state.Smartphones)
@@ -33,6 +38,12 @@ const reducerFilter = (state = defaultState.goods, action) => {
       return Array.isArray(state["Wash Machine"])
         ? { ...state, "Wash Machine": "" }
         : { ...state, "Wash Machine": data["Wash Machine"] };
+    case "WORD FILTER":
+      return [
+        goods.filter((el) =>
+          el.name.toLowerCase().includes(action.payload.toLowerCase())
+        ),
+      ];
     default:
       return state;
   }
@@ -65,12 +76,12 @@ const reducerCart = (state = defaultCartState, action) => {
   }
 };
 
-const catalogReducer = (state = {left: -400, status: 'close'}, action) => {
+const catalogReducer = (state = { left: -400, status: "close" }, action) => {
   switch (action.type) {
     case "OPEN":
-      return {...state, left: 200, status: action.payload};
+      return { ...state, left: 200, status: action.payload };
     case "CLOSE":
-      return {...state, left: -400, status: action.payload};
+      return { ...state, left: -400, status: action.payload };
     default:
       return state;
   }
@@ -79,7 +90,7 @@ const catalogReducer = (state = {left: -400, status: 'close'}, action) => {
 const reducers = combineReducers({
   filter: reducerFilter,
   cart: reducerCart,
-  catalog: catalogReducer
+  catalog: catalogReducer,
 });
 
 const store = configureStore({

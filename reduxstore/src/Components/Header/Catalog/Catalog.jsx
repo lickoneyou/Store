@@ -12,7 +12,6 @@ const Catalog = () => {
       event.target.dataset.name !== "catalog" &&
       catalogState.status === "open"
     ) {
-      console.log(catalogState);
       dispatch({ type: "CLOSE", payload: "close" });
     }
   });

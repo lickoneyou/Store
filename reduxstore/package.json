@@ -42,5 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "cypress": "^13.7.1"
+  }
 }
